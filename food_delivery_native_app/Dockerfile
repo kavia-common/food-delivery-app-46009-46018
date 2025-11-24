@@ -31,4 +31,4 @@ COPY . /app
 RUN npm run lint || true
 
 # Default command: print usage (no interactive server in CI)
-CMD ["/bin/bash", "-lc", "echo 'Expo app ready. Run: npm start (interactive) or npm run web for web preview.'"]
+CMD ["/bin/bash", "-lc", "printf %s \"Expo app ready. Run: npm start (interactive) or npm run web for web preview.\n\""]

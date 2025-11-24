@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
-WORKSPACE=${WORKSPACE:-/home/kavia/workspace-code-generation/food-delivery-app-46009-46018/food_delivery_native_app}
+# Fix default workspace path (typo previously missed the slash after workspace)
+WORKSPACE=${WORKSPACE:-/home/kavia/workspace/code-generation/food-delivery-app-46009-46018/food_delivery_native_app}
 # Use authoritative workspace from container context
 WORKSPACE=/home/kavia/workspace/code-generation/food-delivery-app-46009-46018/food_delivery_native_app
 cd "$WORKSPACE"
